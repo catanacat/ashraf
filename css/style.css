@@ -14,7 +14,28 @@ body,html {
     background: yellow;
 }
 #header-wrapper{}
-#content-wrapper{}
-#side-bar{}
-#content{}
+#content-wrapper{
+    padding-left:20%;
+    transition :all 0.5s ;
+}
+#side-bar{
+    width :20%;
+    margin-left:-20%;
+    position :fixed;
+    
+}
+#content{
+    position:relative;
+}
 #footer-wrapper{}
+.sidebar-nav{
+    margin :0;
+    padding :0;
+    width:100%;
+}
+#content-wrapper.toggle{
+    padding-left:0;
+}
+#content-wrapper.toggle #side-bar{
+    width :0;
+}

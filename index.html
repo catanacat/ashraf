@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html lang="en">
     <head>
@@ -51,42 +51,54 @@
                     </div>
                 </div>
             </div>
-                <div id="content-wrapper" class="row">
-                <div id="side-bar" class="sidebar-collapse col-xs-6 col-sm-3">
-                    this is fot testing side bars
+            <div id="content-wrapper" class="">
+                <div id="side-bar" class="sidebar-collapse">
+                    <ul class="sidebar-nav">
+                        <li></li>
+                    </ul>
                 </div>
-                <div id="content" class="col-sm-9">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-6 col-lg-4">
-                            colum1
-                        </div>
-                          <div class="col-xs-12 col-sm-6 col-lg-4">
-                              colum2
-                        </div>
-                          <div class="col-xs-12 col-sm-6 col-lg-4">
-                              colum3
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-lg-4">
-                              colum4
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-lg-4">
-                            colum1
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-lg-4">
-                              colum2
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-lg-4">
-                              colum3
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-lg-4">
-                              colum4
+                <div id="content">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-lg-4">
+                                colum1
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-lg-4">
+                                colum2
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-lg-4">
+                                colum3
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-lg-4">
+                                colum4
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-lg-4">
+                                colum5
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-lg-4">
+                                colum2
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-lg-4">
+                                colum3
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-lg-4">
+                                colum4
+                            </div>
                         </div>
                     </div>
+                    
 
                 </div>
             </div>
             <div id="footer-wrapper">
+                <a id="menu-toggle" class="btn btn-default" href="">Toggle Menu</a>
             </div>
         </div>
+        <script>
+            $("#menu-toggle").click(function (e) {
+                e.preventDefault();
+                $("#content-wrapper").toggleClass("toggle");
+            });
+        </script>
     </body>
 </html>
