@@ -17,6 +17,7 @@ body,html {
 }
 #header-wrapper{}
 #content-wrapper{
+    
     width:100%;
     padding-left:20%;
     position:relative;
@@ -38,8 +39,16 @@ body,html {
     padding :0;
     width:100%;
 }
+#magicbar{
+    width :50px;
+    background:blue;
+    position:absolute;
+    display:none;
+    transition:all 0.5s;
+   
+}
 #content-wrapper.toggle{
-    padding-left:0;
+    padding-left:50px;
 }
 #content-wrapper.toggle #side-bar{
     width :0;
@@ -50,4 +59,8 @@ ul li{
 }
 ul li a{
     text-decoration:none;
+}
+#content-wrapper.toggle #magicbar{
+    display:block;
+    margin-left:-50px;
 }
