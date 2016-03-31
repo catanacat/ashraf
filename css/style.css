@@ -82,3 +82,13 @@ ul li a{
     display:block;
     margin-left:-50px;
 }
+.sub-category{
+background :grey;
+height: 0;
+overflow: hidden;
+transition :all 0.5s;
+}
+.hide-category{
+ height:100px; 
+ padding-top:30px;  
+}
