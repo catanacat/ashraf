@@ -1,11 +1,17 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing:border-box;
 }
 body,html {
     width: 100%;
     height: 100%;
     background: red;
+    box-sizing:border-box;
+}
+a{
+    display:block;
+    width:100%;
 }
 #body-wrapper{
     width: 90%;
@@ -14,7 +20,75 @@ body,html {
     background: yellow;
 }
 #header-wrapper{}
-#content-wrapper{}
-#side-bar{}
-#content{}
+#content-wrapper{
+    
+    width:100%;
+    padding-left:200px;
+    position:relative;
+    overflow:hidden;
+    min-height:600px;
+    transition :all 0.5s ;
+}
+#side-bar{
+    width :200px;
+    margin-left:-200px;
+    position :absolute;
+    min-height:100%;
+    background:black;
+    transition :all 0.5s ;
+}
+#content{
+    padding:0 0 0 50px ;
+    position:relative;
+}
 #footer-wrapper{}
+.sidebar-nav{
+    margin :0;
+    padding :0;
+    width:150px;
+    
+}
+#collapsebtn{
+    width:50px;
+    height:100%;
+    background:white;
+    float:right;
+}
+#magicbar{
+    width :50px;
+    background:blue;
+    position:absolute;
+    top:50%;
+    display:none;
+    transition:all 1s;
+    
+   
+}
+#content-wrapper.toggle{
+    padding-left:50px;
+}
+#content-wrapper.toggle #side-bar{
+    width :0;
+}
+ul li{
+    list-style:none;
+
+}
+ul li a{
+    display:block;
+    text-decoration:none;
+}
+#content-wrapper.toggle #magicbar{
+    display:block;
+    margin-left:-50px;
+}
+.sub-category{
+background :grey;
+height: 0;
+overflow: hidden;
+transition :all 0.5s;
+}
+.hide-category{
+ height:100px; 
+ padding-top:30px;  
+}

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html lang="en">
     <head>
@@ -51,42 +51,78 @@
                     </div>
                 </div>
             </div>
-                <div id="content-wrapper" class="row">
-                <div id="side-bar" class="sidebar-collapse col-xs-6 col-sm-3">
-                    this is fot testing side bars
+            <div id="content-wrapper" class="">
+                <div id="side-bar" class="sidebar-collapse">
+                    <div id="collapsebtn"><a id="menu-collapse-btn">x</a></div>
+                    <ul class="sidebar-nav">
+                        <li>
+                            <a class="main-category">frist category <span>+</span></a>
+                            <div class="sub-category"><a>this is sub cat one</a></div>
+                        </li>
+                    </ul>
+                    
                 </div>
-                <div id="content" class="col-sm-9">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-6 col-lg-4">
-                            colum1
-                        </div>
-                          <div class="col-xs-12 col-sm-6 col-lg-4">
-                              colum2
-                        </div>
-                          <div class="col-xs-12 col-sm-6 col-lg-4">
-                              colum3
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-lg-4">
-                              colum4
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-lg-4">
-                            colum1
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-lg-4">
-                              colum2
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-lg-4">
-                              colum3
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-lg-4">
-                              colum4
+                <div id="magicbar"><a id="menu-show-btn">>></a></div>
+                <div id="content">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-lg-4">
+                                colum1
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-lg-4">
+                                colum2
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-lg-4">
+                                colum3
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-lg-4">
+                                colum4
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-lg-4">
+                                colum5
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-lg-4">
+                                colum2
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-lg-4">
+                                colum3
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-lg-4">
+                                colum4
+                            </div>
                         </div>
                     </div>
+                    
 
                 </div>
             </div>
             <div id="footer-wrapper">
+              
             </div>
         </div>
+        <script>
+            $("#menu-collapse-btn").click(function (e) {
+                e.preventDefault();
+                $("#content-wrapper").addClass("toggle");
+            });
+            $("#menu-show-btn").click(function (e) {
+                e.preventDefault();
+                $("#content-wrapper").removeClass("toggle");
+            });
+            $(".main-category").click(function (e) {
+                debugger;
+                e.preventDefault();
+                var main=$(this).children("span");
+                if (main.text() == "+") {
+                    main.text ("-");
+                    $(this).next(".sub-category").addClass("hide-category");
+                } else {
+                    main.text("+");
+                    $(this).next(".sub-category").removeClass("hide-category");
+                }
+                
+            });
+            
+        </script>
     </body>
 </html>

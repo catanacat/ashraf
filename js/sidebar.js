@@ -1,9 +1,8 @@
 $(window).resize(function () {
-    if ($(window).width() < 740) {
-        $(".sidebar-collapse").css("display", "none");
-        $("#content").addClass("col-xs-12");
-    } else {
-        $(".sidebar-collapse").css("display", "block");
-        $("#content").removeClass("col-xs-12");
+   var toggle= $("#content-wrapper").hasClass("toggle");
+    if ($(window).width() < 740 && !toggle) {
+        $("#content-wrapper").toggleClass("toggle");
+    } else if ($(window).width() > 980 && toggle) {
+        $("#content-wrapper").toggleClass("toggle");
     }
 });
