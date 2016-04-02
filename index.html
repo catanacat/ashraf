@@ -12,22 +12,32 @@
     </head>
     <body>
         <div id="body-wrapper">
+            <!--start header-->
             <div id="header-wrapper">
+                <!--start navigation bar-->
                 <nav class="navbar navbar-default">
                     <div class="container-fluid">
-                        <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+                        <button class="navbar-toggle" data-toggle="collapse" data-target="#menu">
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <form class="navbar-form navbar-right">
-                            <button >
-                            <span class="glyphicon glyphicon-search"></span>
-                            </button>
-                            <input type="text">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="vertical-align:central;">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                       <form class="navbar-form navbar-right" >
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search" name="srch-term" >
+                                <div class="input-group-btn">
+                                    <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                                </div>
+                            </div>
                         </form>
+                        
                         <div id="menu" class="collapse  navbar-collapse">
-                            <ul class="nav navbar-nav navbar-left">
+                            <ul class="nav navbar-nav navbar-default">
                                 <li>
                                     <a href="#">Home</a>
                                 </li>
@@ -45,56 +55,130 @@
                         </div>
                     </div>
                 </nav>
+                <!--end navigation bar-->
+
+                <!-- start page header-->
                 <div id="page-header">
                     <div class="page-header">
-                         <h1>Example page header <small>Subtext for header</small></h1>
+                        <img src="images/ash.png" />
                     </div>
                 </div>
+                <!--end page header-->
             </div>
+            <!--end header-->
             <div id="content-wrapper" class="">
+
+                <!--start side bar-->
                 <div id="side-bar" class="sidebar-collapse">
-                    <div id="collapsebtn"><a id="menu-collapse-btn">x</a></div>
+                    <div id="collapsebtn">
+                        <!--<button type="button" class="btn btn-default btn-link">
+                            <span class="glyphicon glyphicon-remove"></span> 
+                        </button>-->
+                        <a id="menu-collapse-btn" class="btn btn-default btn-link" >
+                            <span class="glyphicon glyphicon-remove"></span>
+                        </a>
+                    </div>
                     <ul class="sidebar-nav">
                         <li>
-                            <a class="main-category">frist category <span>+</span></a>
+                            <a class="main-category"> <span class="glyphicon glyphicon-plus"></span>frist category</a>
                             <div class="sub-category"><a>this is sub cat one</a></div>
                         </li>
                     </ul>
                     
                 </div>
-                <div id="magicbar"><a id="menu-show-btn">>></a></div>
+                <!--end side bar-->
+                <div id="magicbar"><a id="menu-show-btn">
+    <span class="glyphicon glyphicon-chevron-right"></span><span class="glyphicon glyphicon-chevron-right"></span>
+</a></div>
+                <!--start content-->
                 <div id="content">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-xs-12 col-sm-6 col-lg-4">
-                                colum1
+                                <div class="product">
+                                    <a>
+                                            <img class="img-responsive productImage" src="demopics/ARDUINO-CC-angle-zedattch-highres_0.jpg" alt="ARDUINO CC angle zedattch highre" />
+                                            <h3>ARDUINO CC angle </h3>
+                                            price : 170 LE
+
+                                    </a>
+                                </div>
                             </div>
                             <div class="col-xs-12 col-sm-6 col-lg-4">
-                                colum2
+                                <div class="product">
+                                    <a >
+                                        
+                                            <img class="img-responsive productImage" src="demopics/circuitboard-1242419.jpg" />
+                                            <h3>circuitboard</h3>
+                                            price : 170 LE
+                                       
+                                    </a>
+                                </div>
+                        </div>
+                            <div class="col-xs-12 col-sm-6 col-lg-4">
+                                <a class="productlink">
+                                    <div class="product">
+
+                                        <img class="img-responsive productImage" src="demopics/electronic-1252731.jpg" />
+                                        <h3>electronic</h3>
+                                        price : 170 LE
+
+                                    </div>
+                                </a>
                             </div>
                             <div class="col-xs-12 col-sm-6 col-lg-4">
-                                colum3
+                                <a class="productlink">
+                                    <div class="product">
+
+                                        <img class="img-responsive productImage" src="demopics/electronic-1456843.jpg" />
+                                        <h3>electronic</h3>
+                                        price : 170 LE
+
+                                    </div>
+                                </a>
                             </div>
                             <div class="col-xs-12 col-sm-6 col-lg-4">
-                                colum4
+                                <a class="productlink">
+                                    <div class="product">
+                                        <img class="img-responsive productImage" src="demopics/electronic-board-2-1477194.jpg" />
+                                        <h3>electronic</h3>
+                                        price : 170 LE
+                                    </div>
+                                </a>
                             </div>
                             <div class="col-xs-12 col-sm-6 col-lg-4">
-                                colum5
+                                <a class="productlink">
+                                    <div class="product">
+                                        <img class="img-responsive productImage" src="demopics/electronic-components-1243284.jpg" />
+                                        <h3>electronic</h3>
+                                        price : 170 LE
+                                    </div>
+                                </a>
                             </div>
                             <div class="col-xs-12 col-sm-6 col-lg-4">
-                                colum2
+                                <a class="productlink">
+                                    <div class="product">
+                                        <img class="img-responsive productImage" src="demopics/electronic-components-2-1242738(1).jpg" />
+                                        <h3>electronic</h3>
+                                        price : 170 LE
+                                    </div>
+                                </a>
                             </div>
                             <div class="col-xs-12 col-sm-6 col-lg-4">
-                                colum3
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-lg-4">
-                                colum4
+                                <a class="productlink">
+                                    <div class="product">
+                                        <img class="img-responsive productImage" src="demopics/electronic-components-2-1242738(1).jpg" />
+                                        <h3>electronic</h3>
+                                        price : 170 LE
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
                     
 
                 </div>
+                <!--end side bar-->
             </div>
             <div id="footer-wrapper">
               
