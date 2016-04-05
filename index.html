@@ -12,47 +12,61 @@
     </head>
     <body>
         <div id="body-wrapper">
+
             <!--start header-->
             <div id="header-wrapper">
                 <!--start navigation bar-->
                 <nav class="navbar navbar-default">
                     <div class="container-fluid">
-                        <button class="navbar-toggle" data-toggle="collapse" data-target="#menu">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="vertical-align:central;">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                       <form class="navbar-form navbar-right" >
+                        <!--collapse button-->
+                            <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" >
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        <!--search button-->
+                        <form class="navbar-form navbar-left">
                             <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Search" name="srch-term" >
+                                <input type="text" class="form-control" placeholder="Search" name="srch-term">
                                 <div class="input-group-btn">
                                     <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
                                 </div>
                             </div>
                         </form>
-                        
-                        <div id="menu" class="collapse  navbar-collapse">
-                            <ul class="nav navbar-nav navbar-default">
+                        <div id="menu" class="collapse  navbar-collapse" style="padding-top:10px;">
+                           
+                             <ul class="nav navbar-nav navbar-default">
                                 <li>
                                     <a href="#">Home</a>
                                 </li>
                                 <li>
-                                    <a href="#">About us</a>
-                                </li>
-                                           <li>
-                                    <a href="#">Customers</a>
+                                    <a href="#">How to buy</a>
                                 </li>
                                 <li>
-                                    <a href="#">Contact us</a>
+                                    <a href="#">Login</a>
                                 </li>
 
+                                <li>
+                                    <a href="#">Sign up</a>
+                                </li>
+                                 <li class="social pull-right">
+                                  <a href="#">
+                                        Check out
+                                    </a>
+                                </li>
+                                <li class="social pull-right">
+                                    <a href="#">Add to cart
+                                        <span class="glyphicon glyphicon-shopping-cart"></span> 
+                                    </a>
+                                </li>
+                                 
+
                             </ul>
+                           
                         </div>
+                        
+                        
+
                     </div>
                 </nav>
                 <!--end navigation bar-->
@@ -60,12 +74,17 @@
                 <!-- start page header-->
                 <div id="page-header">
                     <div class="page-header">
-                        <img class="img-responsive" src="images/ash.png" />
+                        <img class="img-responsive" src="images/ash11.png" />
+                        <h3 >Design & Electronics Store</h3>
+                        
                     </div>
+
                 </div>
                 <!--end page header-->
             </div>
             <!--end header-->
+
+
             <div id="content-wrapper" class="">
 
                 <!--start side bar-->
@@ -74,13 +93,19 @@
                         <!--<button type="button" class="btn btn-default btn-link">
                             <span class="glyphicon glyphicon-remove"></span> 
                         </button>-->
-                        <a id="menu-collapse-btn" class="btn btn-default btn-link" >
-                            <span class="glyphicon glyphicon-remove"></span>
+                        <a id="menu-collapse-btn"  >
+                            <span class="glyphicon glyphicon-remove" style="float:right; text-align:right; color:#0A5292; "></span>
                         </a>
                     </div>
+                    <br />
                     <ul class="sidebar-nav">
                         <li>
-                            <a class="main-category"> <span class="glyphicon glyphicon-plus"></span>Sensors</a>
+                            <a class="main-category" style="border:#eee solid 2px; border-top:none;
+border-right:none; border-left:none;"> New Products</a>
+
+                        </li>
+                        <li>
+                            <a class="main-category"> Sensors<span style="float:right;"><b>+</b></span></a>
                             <div class="sub-category">
                                 <ul>
                                   <li><a>GPS</a></li>  
@@ -95,7 +120,7 @@
 
                         </li>
                         <li>
-                            <a class="main-category"> <span class="glyphicon glyphicon-plus"></span>Arduino</a>
+                            <a class="main-category"> Arduino<span style="float:right;"><b>+</b></span></a>
                             <div class="sub-category">
                                 <ul>
                                     <li><a>Arduino</a></li>
@@ -113,9 +138,14 @@
                     
                 </div>
                 <!--end side bar-->
+
+                <!--magicbar-->
                 <div id="magicbar"><a id="menu-show-btn">
     <span class="glyphicon glyphicon-chevron-right"></span><span class="glyphicon glyphicon-chevron-right"></span>
 </a></div>
+                <!--end of magic bar-->
+
+
                 <!--start content-->
                 <div id="content">
                     <div class="container-fluid">
@@ -125,7 +155,7 @@
                                     <a>
                                             <img class="img-responsive productImage" src="demopics/ARDUINO-CC-angle-zedattch-highres_0.jpg" alt="ARDUINO CC angle zedattch highre" />
                                             <h3>ARDUINO CC angle </h3>
-                                            price : 170 LE
+                                            <div class="price"> price : 170 LE</div>
 
                                     </a>
                                 </div>
@@ -136,7 +166,7 @@
                                         
                                             <img class="img-responsive productImage" src="demopics/circuitboard-1242419.jpg" />
                                             <h3>circuitboard</h3>
-                                            price : 170 LE
+                                        <div class="price"> price : 170 LE</div>
                                        
                                     </a>
                                 </div>
@@ -146,7 +176,7 @@
                                     <a >
                                             <img class="img-responsive productImage" src="demopics/electronic-1252731.jpg" />
                                             <h3>electronic</h3>
-                                            price : 170 LE
+                                        <div class="price"> price : 170 LE</div>
                                     </a>
                                 </div>
                             </div>
@@ -155,7 +185,7 @@
                                     <a>
                                         <img class="img-responsive productImage" src="demopics/electronic-1456843.jpg" />
                                         <h3>electronic</h3>
-                                        price : 170 LE
+                                        <div class="price"> price : 170 LE</div>
 
                                     </a>
                                 </div>
@@ -166,7 +196,7 @@
 
                                         <img class="img-responsive productImage" src="demopics/electronic-board-2-1477194.jpg" />
                                         <h3>electronic</h3>
-                                        price : 170 LE
+                                        <div class="price"> price : 170 LE</div>
                                     </a>
                                 </div>
                             </div>
@@ -175,7 +205,7 @@
                                     <div class="product">
                                         <img class="img-responsive productImage" src="demopics/electronic-components-1243284.jpg" />
                                         <h3>electronic</h3>
-                                        price : 170 LE
+                                        <div class="price"> price : 170 LE</div>
                                     </div>
                                 </a>
                             </div>
@@ -184,7 +214,7 @@
                                     <div class="product">
                                         <img class="img-responsive productImage" src="demopics/electronic-components-2-1242738(1).jpg" />
                                         <h3>electronic</h3>
-                                        price : 170 LE
+                                        <div class="price"> price : 170 LE</div>
                                     </div>
                                 </a>
                             </div>
@@ -193,7 +223,7 @@
                                     <a >
                                         <img class="img-responsive productImage" src="demopics/fan-1243276.jpg" />
                                            <h3>electronic</h3>
-                                            price : 170 LE
+                                        <div class="price"> price : 170 LE</div>
                                     </a>
                                 </div>
                             </div>
@@ -202,7 +232,7 @@
                                     <a>
                                         <img class="img-responsive productImage" src="demopics/IMG_0105.jpg" />
                                          <h3>electronic</h3>
-                                        price : 170 LE
+                                        <div class="price"> price : 170 LE</div>
                                     </a>
                                 </div>
                             </div>
@@ -211,7 +241,7 @@
                                     <a>
                                         <img class="img-responsive productImage" src="demopics/switch-2-1171275.jpg" />
                                         <h3>electronic</h3>
-                                        price : 170 LE
+                                        <div class="price"> price : 170 LE</div>
                                     </a>
                                 </div>
                             </div>
@@ -220,7 +250,7 @@
                                     <a>
                                         <img class="img-responsive productImage" src="demopics/pc-circuit-1540102.jpg" />
                                         <h3>electronic</h3>
-                                        price : 170 LE
+                                        <div class="price"> price : 170 LE</div>
                                     </a>
                                 </div>
                             </div>
@@ -229,7 +259,7 @@
                                     <a>
                                         <img class="img-responsive productImage" src="demopics/the-citadel-of-the-electrons-1232638.jpg" />
                                         <h3>electronic</h3>
-                                        price : 170 LE
+                                        <div class="price"> price : 170 LE</div>
                                     </a>
                                 </div>
                             </div>
@@ -240,6 +270,8 @@
 
                 </div>
                 <!--end content-->
+
+
             </div>
             <div id="footer-wrapper">
               
